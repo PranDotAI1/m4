@@ -1,0 +1,224 @@
+.consentpage {
+    .mainSection {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 10px 0px;
+
+
+        aside {
+            width: 260px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0px;
+
+            .leftTopSection {
+                ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            display: flex;
+                            gap: 0px 10px;
+                            color: #4B5563;
+                            padding: 6px 15px;
+                        }
+                    }
+                }
+            }
+
+            .bottomLeftSection {
+                margin-top: auto;
+
+                .logout {
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .mainRigtSection {
+            width: calc(100% - 260px);
+            background-color: #fff;
+            border-radius: 8px;
+
+            .postSectionHeader {
+                padding: 20px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .headingSection {
+                    h4 {
+                        color: #1E429F;
+                        font-weight: 500;
+                        font-size: 24px;
+                        margin: 0;
+                    }
+                }
+
+                .searchSection {
+                    align-items: stretch;
+                    display: flex;
+                    margin-block: auto;
+
+
+                    .feilds {
+                        .searchBar {
+                            position: relative;
+
+                            input[type=text] {
+                                border: 1px solid #d1d5db;
+                                border-radius: 8px;
+                                box-sizing: border-box;
+                                height: 42px;
+                                padding: 0 10px 0 40px;
+                                width: 100%;
+                                font-size: 14px;
+                            }
+
+                            .searchIcon {
+                                left: 10px;
+                                top: 53%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .postSectionBody {
+                .consentTable {
+                    table {
+                        width: 100%;
+
+                        thead {
+                            background-color: #f9fafb;
+
+                            tr {
+                                th {
+                                    border-bottom: 1px solid #E5E7EB;
+                                    padding: 10px 10px;
+                                    color: #6B7280;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            background-color: #fff;
+
+                            tr {
+                                td {
+                                    padding: 10px 10px;
+                                    color: #6B7280;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    border-bottom: 1px solid #E5E7EB;
+
+                                    h5 {
+                                        color: #111928;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.AddNewConsentsRightPanel {
+    .offcanvas-header {
+        h5 {
+            text-transform: uppercase;
+            color: #9CA3AF;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .offcanvas-body {
+        .feilds {
+            margin-bottom: 15px;
+
+            label {
+                color: #233876;
+            }
+
+            .healthInfoTyle {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 6px 10px;
+
+                label {
+                    width: 46%;
+                    display: flex;
+                    align-items: center;
+                    gap: 0px 10px;
+                    margin: 0;
+                    cursor: pointer;
+
+                    .terms-condition-right {
+                        h4 {
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin: 0;
+                            color: #111928;
+                        }
+                    }
+                }
+            }
+
+            .healthInfoExpiry {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 6px 10px;
+                margin-top: 10px;
+
+                label {
+                    display: flex;
+                    align-items: center;
+                    gap: 0px 10px;
+                    margin: 0;
+                    cursor: pointer;
+
+                    .terms-condition-right {
+                        h4 {
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin: 0;
+                            color: #111928;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .offcanvas-footer {
+        .footerBtn {
+            display: flex;
+            gap: 0px 10px;
+            align-items: end;
+            justify-content: end;
+            padding: 10px 25px;
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+@import './variables';
+@import './fonts';
+@import './mixins';
+@import './common';
+
+
+@import './core/header';
+@import './core/footer';
+
+
+@import './pages/Home';
+@import './pages/abha-userflow';
+@import './pages/consents';
+@import './pages/login';
