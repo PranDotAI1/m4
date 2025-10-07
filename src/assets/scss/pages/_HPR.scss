@@ -1,0 +1,240 @@
+.steparHeader {
+    background: linear-gradient(260deg, rgba(96, 27, 145, 1) 0%, rgba(0, 42, 152, 1) 50%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 20px 0px;
+
+    .headerLogoSteper {}
+
+    .headerLogoSteperAside {
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                color: #fff;
+                padding-left: 20px;
+
+                .headerFacility {
+                    display: flex;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}
+
+.stepearBody {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px 24px;
+
+    .profileSeaction {
+        background-color: rgba(243, 244, 246, 1);
+        border-radius: 16px;
+
+        .profileRow {
+            display: flex;
+
+            .profileRowCol {
+                width: 33%;
+                border: 1px solid rgba(229, 231, 235, 1);
+                padding: 10px 20px;
+
+                &.userPics {
+                    display: flex;
+                    gap: 15px;
+                    border-left: 0;
+                    border-top: 0;
+
+                    .profileImgUser {
+                        width: 48px;
+                        height: 48px;
+                    }
+
+                    .userRightDet {
+                        h4 {
+                            color: rgba(31, 42, 55, 1);
+                            font-weight: 600;
+                            font-size: 16px;
+                            margin: 0;
+                        }
+
+                        p {
+                            color: gray;
+                            font-weight: 400;
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                &.userAddress {
+                    border-top: 0;
+                }
+
+                &.gendarDobMix {
+                    display: flex;
+                    justify-content: space-between;
+                    border-top: 0;
+                    border-right: 0;
+                }
+
+                &.userHpid {
+                    border-left: 0;
+                }
+
+                &.userWorkStatus {
+                    border-right: 0px;
+                }
+
+                &.hpidAppStatMix {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                &.counsilStatusMix {
+                    display: flex;
+                    justify-content: space-between;
+                    border-left: 0;
+                    border-bottom: 0;
+                }
+
+                &.userRole {
+                    border-bottom: 0px;
+                }
+
+                &.userEmail {
+                    border-bottom: 0;
+                    border-right: 0;
+                }
+
+                .title {
+                    color: rgba(107, 114, 128, 1);
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+
+                .value {
+                    color: rgba(55, 65, 81, 1);
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .stepper-container {
+        .stepper-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+
+            .step {
+                p {
+                    color: rgba(107, 114, 128, 1);
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .circle {
+                    display: none;
+                }
+
+                &.active {
+                    p {
+                        color: rgba(28, 100, 242, 1);
+                    }
+                }
+            }
+
+            .line {
+                background: rgb(229, 231, 235);
+                width: 100px;
+                height: 1px;
+            }
+        }
+    }
+
+    .boxHprTab {
+        .boxHprBody {
+            .Suggestions {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                p {
+                    color: rgba(55, 65, 81, 1);
+                    font-size: 12px;
+                    margin: 0;
+                }
+
+                .suugHint {
+                    span {
+                        display: inline-block;
+                        color: rgba(66, 56, 157, 1);
+                        font-size: 14px;
+                        font-weight: 500;
+                        background-color: rgba(229, 237, 255, 1);
+                        border-radius: 6px;
+                        padding: 2px 5px;
+                        margin: 0px 5px;
+                    }
+                }
+            }
+
+            .passwordSection {
+                margin-top: 20px;
+
+                h6 {
+                    color: rgba(30, 66, 159, 1);
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin: 0;
+                    margin-bottom: 20px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid rgba(229, 231, 235, 1);
+                }
+            }
+        }
+    }
+}
+
+.boxHprTab {
+    background-color: rgba(235, 245, 255, 1);
+    border-radius: 16px;
+    margin: 10px 0px;
+
+    .boxHprHeader {
+        background-color: rgba(195, 221, 253, 1);
+        border-radius: 8px;
+        padding: 16px;
+
+        h4 {
+            color: rgba(30, 66, 159, 1);
+            font-size: 16px;
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+
+    .boxHprBody {
+        padding: 16px;
+        border-radius: 0px 0px 16px 16px;
+
+        .feilds {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.hprBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

@@ -23,6 +23,7 @@ import RetrieveEnrollment from "../views/Retrieve-Enrollment/Retrieve-Enrollment
 import Login from "../views/Home/Login"
 import { ProtectedRoute, ProtectedRoutesbyCampus } from "../components/common/ProtectedRoute";
 import LoginNHPRPage from "../views/NHPR-login/NHPR-Login"
+import HealthcareProfessionals from "../views/HPR/HealthcareProfessionals"
 
 
 
@@ -33,6 +34,7 @@ const WebRoutes = () => {
                 <Routes>
                     <Route path="/home" element={<Home />}></Route>
                     <Route path="/abha-home" element={<AbhaAbout />}></Route>
+                    <Route path="/HealthcareProfessionals" element={<HealthcareProfessionals />}></Route>
                     <Route path="/login-NHPR" element={<LoginNHPRPage />}></Route>
                     <Route path="/aadhar-abha-create" element={<AadharVerificationPage />}></Route>
                     <Route path="/abha-Card" element={<UserABHAcard />} />
