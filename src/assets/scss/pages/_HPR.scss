@@ -201,6 +201,62 @@
                     border-bottom: 1px solid rgba(229, 231, 235, 1);
                 }
             }
+
+            .profilePerviewSec {
+                .profielImg {
+                    display: flex;
+
+                    img {
+                        margin-right: 10px;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    .profileuserDet {
+                        h4 {
+                            color: rgba(31, 42, 55, 1);
+                            font-size: 16px;
+                            margin: 0;
+                            font-weight: 600;
+                        }
+
+                        p {
+                            color: rgba(55, 65, 81, 1);
+                            font-weight: 500;
+                            margin: 0;
+                            font-size: 12px;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .userProfileData {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .profileDataCol {
+                        width: 25%;
+                        margin: 10px 0px;
+
+                        .values {
+                            h4 {
+                                color: rgba(75, 85, 99, 1);
+                                font-size: 12px;
+                                font-weight: 600;
+                                margin: 0;
+                            }
+
+                            p {
+                                color: rgba(75, 85, 99, 1);
+                                font-size: 12px;
+                                font-weight: 500;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                }
+            }
         }
     }
 }
@@ -229,6 +285,97 @@
 
         .feilds {
             margin-bottom: 20px;
+
+            .newRadioFeildsUI {
+                >label {
+                    background-color: #fff;
+                    padding: 10px 20px;
+                    border-radius: 16px;
+                    margin-right: 10px;
+                    border: 2px solid #fff;
+                    cursor: pointer;
+                    min-width: 160px;
+
+                    span {
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                }
+
+                &.boxDetaRad {
+                    justify-content: space-between;
+                    display: flex;
+
+                    label {
+                        width: 32%;
+                        display: flex;
+                        align-items: baseline;
+                        gap: 10px;
+                        margin: 0;
+
+                        .detRad {
+                            h5 {
+                                color: rgba(30, 66, 159, 1);
+                                font-size: 14px;
+                                font-weight: 500;
+                                margin: 0;
+                            }
+
+                            span {
+                                color: rgba(107, 114, 128, 1);
+                                font-size: 12px;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dlUploadImg {
+                background: #fff;
+                border: 2px dashed #ccc;
+                padding: 20px 20px;
+                text-align: center;
+                position: relative;
+
+                .uploadBox {
+                    input[type="file"] {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                        opacity: 0;
+                    }
+
+                    p {
+                        color: rgba(107, 114, 128, 1);
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+
+                    h6 {
+                        color: rgba(28, 100, 242, 1);
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+
+                    h5 {
+                        color: rgba(107, 114, 128, 1);
+                        font-size: 10px;
+                        margin: 10px 0px 0px 0px;
+                    }
+                }
+            }
+        }
+
+        .importDigiLocker {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 16px;
         }
     }
 }

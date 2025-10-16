@@ -1,11 +1,11 @@
-import HPRStepper from "./HPR-Stepper";
+import HPRStepper from "./HFR-Stepper";
 import WhiteLogo from '../../assets/images/white-logo-2.svg'
 import HospitalIcon from '../../assets/images/comman/hospital.svg'
 import QuestionSquare from '../../assets/images/comman/question-square.svg'
 import User from '../../assets/images/comman/user-1.png'
 import BasicInfo from "../../components/HPR/BasicInfo";
 
-const HealthcareProfessionals = () => {
+const HFR = () => {
     return (
         <>
             <div className="HealthcareProfessionalsPage">
@@ -99,8 +99,8 @@ const HealthcareProfessionals = () => {
                                 </div>
                             </div>
                         </div>
-                        <BasicInfo />
-                        {/* <HPRStepper /> */}
+                        {/* <BasicInfo /> */}
+                        <HPRStepper />
                     </div>
 
                 </div>
@@ -108,4 +108,4 @@ const HealthcareProfessionals = () => {
         </>
     )
 }
-export default HealthcareProfessionals;
+export default HFR;
