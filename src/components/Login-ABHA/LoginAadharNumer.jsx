@@ -7,7 +7,7 @@ import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import { API_BASE_URL } from "../../config";
 import { toast, ToastContainer } from 'react-toastify';
-import DeactivatePopup from "../../components/Forgot-ABHA/Account-deactivate-popup";
+import DeactivatePopup from "../Forgot-ABHA/Account-deactivate-popup";
 
 const LoginAadharNumber = () => {
     const [showOtpBox, setShowOtpBox] = useState(false);

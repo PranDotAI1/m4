@@ -6,7 +6,7 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import { API_BASE_URL } from "../../config";
 import { toast, ToastContainer } from 'react-toastify';
-import DeactivatePopup from "../../components/Forgot-ABHA/Account-deactivate-popup";
+import DeactivatePopup from "../Forgot-ABHA/Account-deactivate-popup";
 
 const LoginABHANumber = () => {
     const [showOtpBox, setShowOtpBox] = useState(false);

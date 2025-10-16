@@ -3,7 +3,7 @@ import axios from "axios";
 import { API_BASE_URL } from "../../config";
 import { useNavigate } from "react-router-dom";
 import { encryptString, createSession, getAbhaProfile, verifyUser } from "../../services/apiUtils";
-import Loader from '../../components/common/Loader';
+import Loader from '../common/Loader';
 import { ToastContainer, toast } from "react-toastify";
 
 const ForgoatMobileNumber = () => {

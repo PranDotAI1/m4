@@ -6,7 +6,7 @@ import { encryptString, createSession, getAbhaProfile, verifyUser } from "../../
 import Loader from '../common/Loader';
 import axios from 'axios';
 import { API_BASE_URL } from "../../config";
-import DeactivatePopup from "../../components/Forgot-ABHA/Account-deactivate-popup";
+import DeactivatePopup from "../Forgot-ABHA/Account-deactivate-popup";
 
 const LoginMobileNumber = () => {
 
@@ -178,7 +178,7 @@ const LoginMobileNumber = () => {
                             toast.error(dtResponse?.message || "Failed to verify OTP. Please try again.");
                             setIsPageLoading(false);
                         }
-                    }else{
+                    } else {
                         toast.error("Session creation failed. Please try again.");
                         setIsPageLoading(false);
                     }
@@ -190,20 +190,20 @@ const LoginMobileNumber = () => {
         } catch (error) {
             setIsPageLoading(false);
             // Backend returned an error response
-                if (error.response?.data?.success === false && error.response?.data?.message === "Unclassified Authentication Failure") {
-                    toast.error(error.response.data.message + ". Please try again!");
-                } else if (error.response?.data?.success === false && error.response?.data?.message === "This account is deactivated. Please continue to reactivate.") { 
-                    setShowDeactivateMessage(error.response?.data?.message || "Account Deactivated");
-                } else {
-                    toast.error(error.response?.data?.message || "Server error occurred. Please try again later.");
-                }
+            if (error.response?.data?.success === false && error.response?.data?.message === "Unclassified Authentication Failure") {
+                toast.error(error.response.data.message + ". Please try again!");
+            } else if (error.response?.data?.success === false && error.response?.data?.message === "This account is deactivated. Please continue to reactivate.") {
+                setShowDeactivateMessage(error.response?.data?.message || "Account Deactivated");
+            } else {
+                toast.error(error.response?.data?.message || "Server error occurred. Please try again later.");
+            }
         }
     };
 
 
     return (
         <>
-            {showDeactivateMessage && <DeactivatePopup onClose={() => setShowDeactivateMessage("") } showDeactivateMessage={showDeactivateMessage}/>}
+            {showDeactivateMessage && <DeactivatePopup onClose={() => setShowDeactivateMessage("")} showDeactivateMessage={showDeactivateMessage} />}
             <ToastContainer />
             {isPageLoading && <Loader />}
             <div className="flow-feilds">
